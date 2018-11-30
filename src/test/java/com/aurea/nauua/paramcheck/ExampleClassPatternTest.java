@@ -18,4 +18,10 @@ public class ExampleClassPatternTest {
         ExampleClass entity = new ExampleClass();
         entity.assignNewValue2(null);
     }
+
+    @Test(expected = NullPointerException.class)
+    public void test2NullParameter() throws Exception {
+        ExampleClass entity = new ExampleClass();
+        entity.test2(null);
+    }
 }

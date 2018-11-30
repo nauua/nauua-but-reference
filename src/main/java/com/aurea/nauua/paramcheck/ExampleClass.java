@@ -17,12 +17,17 @@ public class ExampleClass {
 		this.name = "Nasir";
 	}
 	
-	public static void assignNewValue2(String input) {
+	public void assignNewValue2(String input) {
 		Objects.requireNonNull(input);
 	}
 	
 	
-	public void test2() {
+	public void requireNotNullOnSecondLine(String input) {
+		this.name = "Nasir2";
+		Objects.requireNonNull(input);
+	}
+
+	public void requireNotNullAbsent(String input) {
 		this.name = "Nasir2";
 	}
 }
