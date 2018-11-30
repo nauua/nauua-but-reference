@@ -16,4 +16,13 @@ public class ExampleClass {
 		Objects.requireNonNull(input);
 		this.name = "Nasir";
 	}
+	
+	public static void assignNewValue2(String input) {
+		Objects.requireNonNull(input);
+	}
+	
+	
+	public void test2() {
+		this.name = "Nasir2";
+	}
 }
