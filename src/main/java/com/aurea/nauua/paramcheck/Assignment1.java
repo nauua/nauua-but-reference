@@ -2,14 +2,14 @@ package com.aurea.nauua.paramcheck;
 
 import java.util.Objects;
 
-public class ExampleClass {
+public class Assignment1 {
 
 	public String name;
 
-	public ExampleClass() {
+	public Assignment1() {
 	}
 
-	public ExampleClass(String stringVal) {
+	public Assignment1(String stringVal) {
 		this.name = Objects.requireNonNull(stringVal);
 	}
 
@@ -23,7 +23,7 @@ public class ExampleClass {
 	public static void method2(String input) {
 		Objects.requireNonNull(input);
 	}
-	
+
 	// multiple param instance method
 	public void method1(String input, String input2) {
 		Objects.requireNonNull(input);
@@ -34,15 +34,4 @@ public class ExampleClass {
 	public static void method2(String input, String input2) {
 		Objects.requireNonNull(input);
 	}
-	
-	// discard this method
-	public void method0() {
-		this.name = "Nasir2";
-	}
-
-	// discard this method
-	public void method01() {
-		this.name = "Nasir2";
-	}
-
 }
